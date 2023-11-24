@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Rahul Yadav 854005</h3>
+    <h2>Using JavaScript Symbol()</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: "Nikk",
+            lastName: "Dish",
+            age: 30,
+            eyeColor: "blue"
+        };
+
+        let id = Symbol('id');
+        person[id] = 140353;
+
+        document.getElementById("demo").innerHTML = person[id] + " " + person.firstName + person.lastName;
+    </script>
+
+</body>
+
+</html>
